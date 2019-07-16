@@ -44,20 +44,22 @@ Alternatively you can do
 
 The optimus service provides a few configurable options:
 
-	optimus_manage_kld: allow optimus to manage kldload/unload of
-											the Nvidia kernel modules (default="YES")
-	optimus_modeset: 		load Nvidia modeset kernel driver
-											(default="YES")
-	optimus_screen:			Screen number for running the optimus X
-											server (default="8")
-	optimus_x_conf:			Config file to use for X. If this doesn't
-											exist it will be generated automatically.
-											You should probably check the PCI address
-											specified in the generated config file as
-											it is extracted from pciconf automatically.
-											(default="/usr/local/etc/X11/optimus.x.conf")
-  optimus_x_flags:		optimus X server flags
-											(default="-sharevts -noreset")
+```
+optimus_manage_kld: allow optimus to manage kldload/unload of
+                    the Nvidia kernel modules (default="YES")
+optimus_modeset:    load Nvidia modeset kernel driver
+                    (default="YES")
+optimus_screen:     Screen number for running the optimus X
+                    server (default="8")
+optimus_x_conf:     Config file to use for X. If this doesn't
+                    exist it will be generated automatically.
+                    You should probably check the PCI address
+                    specified in the generated config file as
+                    it is extracted from pciconf automatically.
+                    (default="/usr/local/etc/X11/optimus.x.conf")
+optimus_x_flags:    optimus X server flags
+                    (default="-sharevts -noreset")
+```
 
 If you don't want optimus manage your kldload/unloads, you must
 load nvidia.ko and/or nvidia-modeset.ko yourself.
