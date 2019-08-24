@@ -41,6 +41,7 @@ Section \"Device\"
     Option \"NoLogo\" \"true\"
     Option \"UseEDID\" \"false\"
     Option \"ConnectedMonitor\" \"DFP\"
+    Option \"AllowEmptyInitialConfiguration\" \"True\"
 EndSection
 
 Section \"InputDevice\"
