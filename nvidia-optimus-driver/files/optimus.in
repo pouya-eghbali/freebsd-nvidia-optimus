@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# PROVIDE: optimus
+# BEFORE:  LOGIN
+
 . /etc/rc.subr
 
 name="optimus"
